@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WS</title>
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../src/scss/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row align-items-center justify-content-center">
+        <div class="col-xl-6">
+          <div id="chat-wrap">
+            <h1>Chat</h1>
+            <div id="chat-window">
+              <div id="output"></div>
+              <div id="feedback"></div>
+            </div>
+            <input type="text" id="sender" placeholder="Add" />
+            <input type="text" id="message" placeholder="Message" />
+            <button id="submitBtn" class="btn w-100 btn-primary my-2 py-2">
+              Gonder
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.2/socket.io.js"
+      integrity="sha512-zoJXRvW2gC8Z0Xo3lBbao5+AS3g6YWr5ztKqaicua11xHo+AvE1b0lT9ODgrHTmNUxeCw0Ry4BGRYZfXu70weg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../src/js/app.js"></script>
+  </body>
+</html>
